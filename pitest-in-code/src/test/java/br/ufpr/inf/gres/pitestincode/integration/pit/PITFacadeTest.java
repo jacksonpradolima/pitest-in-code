@@ -25,6 +25,7 @@ public class PITFacadeTest {
     @BeforeClass
     public static void setUpClass() {
         facade = new PITFacade(System.getProperty("user.dir") + File.separator + "training");
+        //the directory is not been used: "training/src/br/ufpr/inf/gres/TriTyp.java"
         programUnderTest = new Program("br.ufpr.inf.gres.TriTyp", new File("training/src/br/ufpr/inf/gres/TriTyp.java"));
     }
 
